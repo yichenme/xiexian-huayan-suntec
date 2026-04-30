@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xiexian Huayan Singapore Landmark Flagship | Suntec City Proposal</title>
+  <meta name="description" content="Brand introduction and project plan for Xiexian Huayan Singapore Landmark Flagship Restaurant at Suntec City." />
+  <meta property="og:title" content="Xiexian Huayan Singapore Landmark Flagship" />
+  <meta property="og:description" content="A premium Chinese banquet and art dining concept proposed for Suntec City, Singapore." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0805;
+      --bg-2: #1c0f09;
+      --paper: #fbf3e6;
+      --paper-2: #f3e2c8;
+      --gold: #c89b4b;
+      --gold-2: #f0d28c;
+      --red: #8d201c;
+      --ink: #231711;
+      --muted: #795f4d;
+      --white: #fffaf1;
+      --line: rgba(200, 155, 75, .34);
+      --shadow: 0 28px 90px rgba(0,0,0,.34);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top left, rgba(200,155,75,.18), transparent 32rem), var(--bg);
+      line-height: 1.62;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .hero {
+      min-height: 92vh;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      align-items: center;
+      padding: 34px 6vw 76px;
+      background:
+        linear-gradient(120deg, rgba(15,8,5,.95), rgba(15,8,5,.7) 46%, rgba(85,22,18,.35)),
+        radial-gradient(circle at 80% 20%, rgba(240,210,140,.17), transparent 20rem),
+        linear-gradient(135deg, #160b07, #31110d 55%, #0f0805);
+    }
+    .hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+    }
+    .hero:after {
+      content: "蟹仙画宴";
+      position: absolute;
+      right: -1.5rem;
+      bottom: 1rem;
+      font-family: "Noto Serif SC", serif;
+      font-size: clamp(4rem, 14vw, 13rem);
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: rgba(240, 210, 140, .06);
+      writing-mode: vertical-rl;
+      pointer-events: none;
+    }
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 6vw;
+      color: rgba(255,250,241,.88);
+    }
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .82rem;
+    }
+    .seal {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      color: var(--gold-2);
+      font-family: "Noto Serif SC", serif;
+      border-radius: 50%;
+      background: rgba(141,32,28,.2);
+    }
+    .nav-links { display: flex; gap: 22px; font-size: .86rem; color: rgba(255,250,241,.72); }
+    .nav-links a:hover { color: var(--gold-2); }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1120px;
+      margin: 92px auto 0;
+      width: 100%;
+    }
+    .eyebrow {
+      color: var(--gold-2);
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-size: .78rem;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    h1, h2, h3 {
+      font-family: "Cormorant Garamond", "Noto Serif SC", serif;
+      line-height: 1.05;
+      margin: 0;
+    }
+    h1 {
+      font-size: clamp(3.1rem, 8vw, 7.4rem);
+      max-width: 980px;
+      letter-spacing: -.04em;
+    }
+    .subtitle {
+      max-width: 780px;
+      margin-top: 30px;
+      font-size: clamp(1.08rem, 2vw, 1.42rem);
+      color: rgba(255,250,241,.8);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .92rem;
+      border: 1px solid var(--line);
+    }
+    .btn.primary { background: linear-gradient(135deg, var(--gold-2), var(--gold)); color: #2b1709; border-color: transparent; }
+    .btn.secondary { color: var(--white); background: rgba(255,255,255,.06); backdrop-filter: blur(8px); }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 58px;
+    }
+    .metric {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.055);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 22px;
+    }
+    .metric strong { display: block; color: var(--gold-2); font-size: 1.35rem; line-height: 1.2; }
+    .metric span { display: block; color: rgba(255,250,241,.72); font-size: .88rem; margin-top: 6px; }
+
+    main { background: var(--paper); }
+    section { padding: 86px 6vw; }
+    .wrap { max-width: 1120px; margin: 0 auto; }
+    .section-head { display: grid; grid-template-columns: .82fr 1.18fr; gap: 48px; align-items: end; margin-bottom: 38px; }
+    h2 { font-size: clamp(2.25rem, 4.2vw, 4.1rem); color: var(--ink); letter-spacing: -.025em; }
+    .lead { font-size: 1.08rem; color: var(--muted); margin: 0; }
+    .kicker { color: var(--red); font-weight: 800; letter-spacing: .15em; text-transform: uppercase; font-size: .76rem; margin-bottom: 12px; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .card {
+      background: rgba(255,250,241,.76);
+      border: 1px solid rgba(121,95,77,.16);
+      border-radius: 26px;
+      padding: 28px;
+      box-shadow: 0 18px 50px rgba(35,23,17,.06);
+    }
+    .card h3 { font-size: 1.65rem; margin-bottom: 12px; }
+    .card p, .card li { color: var(--muted); }
+    .card ul { padding-left: 18px; margin: 12px 0 0; }
+    .dark {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 20% 10%, rgba(200,155,75,.2), transparent 24rem),
+        linear-gradient(135deg, var(--bg-2), #120806);
+    }
+    .dark h2, .dark h3 { color: var(--white); }
+    .dark .lead, .dark p, .dark li { color: rgba(255,250,241,.73); }
+    .dark .card { background: rgba(255,255,255,.055); border-color: var(--line); box-shadow: none; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: stretch; }
+    .panel {
+      background: var(--white);
+      border-radius: 32px;
+      padding: 34px;
+      border: 1px solid rgba(121,95,77,.16);
+      box-shadow: var(--shadow);
+    }
+    .dark .panel { background: rgba(255,255,255,.06); border-color: var(--line); box-shadow: none; }
+    .list { display: grid; gap: 14px; margin-top: 22px; }
+    .list-item {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    .num {
+      width: 34px; height: 34px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: rgba(200,155,75,.18);
+      color: var(--red); font-weight: 800;
+    }
+    .dark .num { color: var(--gold-2); background: rgba(240,210,140,.12); }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 22px;
+      background: rgba(255,250,241,.72);
+    }
+    .table th, .table td { text-align: left; padding: 17px 18px; border-bottom: 1px solid rgba(121,95,77,.16); vertical-align: top; }
+    .table th { color: var(--red); font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; }
+    .table tr:last-child td { border-bottom: 0; }
+    .highlight-band {
+      background: linear-gradient(135deg, var(--red), #3a100d);
+      color: var(--white);
+      border-radius: 34px;
+      padding: 42px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 32px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+    .highlight-band h2 { color: var(--white); }
+    .highlight-band p { color: rgba(255,250,241,.78); }
+    .tag-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag { border: 1px solid rgba(240,210,140,.35); color: var(--gold-2); border-radius: 999px; padding: 8px 12px; font-size: .84rem; background: rgba(255,255,255,.06); }
+    .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: step; }
+    .timeline .card { position: relative; padding-top: 54px; }
+    .timeline .card:before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute; top: 22px; left: 24px;
+      width: 25px; height: 25px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--red); color: var(--white); font-size: .78rem; font-weight: 800;
+    }
+    footer {
+      background: #080403;
+      color: rgba(255,250,241,.65);
+      padding: 46px 6vw;
+      font-size: .92rem;
+    }
+    footer .wrap { display: flex; justify-content: space-between; gap: 22px; flex-wrap: wrap; }
+    .cn { font-family: "Noto Serif SC", serif; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .metrics, .cards, .split, .section-head, .highlight-band, .timeline { grid-template-columns: 1fr; }
+      section { padding: 64px 5vw; }
+      .hero { padding-left: 5vw; padding-right: 5vw; }
+      .metric, .card, .panel, .highlight-band { border-radius: 22px; }
+      .table { font-size: .92rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="brand-mark"><span class="seal">蟹</span><span>Xiexian Huayan</span></div>
+      <div class="nav-links">
+        <a href="#concept">Concept</a>
+        <a href="#suntec">Suntec Fit</a>
+        <a href="#investment">Investment</a>
+        <a href="#timeline">Timeline</a>
+      </div>
+    </nav>
+    <div class="hero-inner">
+      <div class="eyebrow">Singapore First Store · Landmark Flagship Proposal</div>
+      <h1>Xiexian Huayan Singapore Landmark Flagship</h1>
+      <p class="subtitle">A premium Chinese banquet and art dining destination proposed for Suntec City, bringing the calibre of Shanghai’s Xiexian Huayan to Singapore through refined crab cuisine, private-room hospitality, and immersive Chinese aesthetics.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#overview">View Project Brief</a>
+        <a class="btn secondary" href="#investment">Investment & Revenue</a>
+      </div>
+      <div class="metrics" aria-label="Key project metrics">
+        <div class="metric"><strong>2,000–3,000 sq ft</strong><span>Preferred flagship unit size</span></div>
+        <div class="metric"><strong>60–100 seats</strong><span>Premium seating with private rooms</span></div>
+        <div class="metric"><strong>S$2.5M–3.5M</strong><span>Estimated total investment</span></div>
+        <div class="metric"><strong>S$6M–7.5M</strong><span>Indicative annual revenue potential</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Project Overview</div>
+            <h2>Shanghai-origin premium Chinese banquet dining, launched in Singapore.</h2>
+          </div>
+          <p class="lead">Xiexian Huayan is a self-owned brand planning its first Singapore outlet as a landmark flagship restaurant. The proposed concept is designed for high-end banquets, business entertainment, private dining, and premium Chinese culinary experiences.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Brand Identity</h3>
+            <p><strong>Xiexian Huayan</strong> is positioned as a high-end Chinese art restaurant, originating from Shanghai and built around refined crab banquet cuisine, Chinese aesthetics, and elevated hospitality.</p>
+          </article>
+          <article class="card">
+            <h3>Singapore Flagship</h3>
+            <p>The Singapore outlet will be the brand’s first store in the market and is intended to serve as a recognisable flagship, not a standard casual dining expansion.</p>
+          </article>
+          <article class="card">
+            <h3>Core Occasion</h3>
+            <p>The restaurant will focus on business hosting, VIP private rooms, family celebrations, festive banquets, and high-value dining occasions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="concept" class="dark">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Brand Positioning</div>
+            <h2>A premium banquet destination, not a casual seafood restaurant.</h2>
+          </div>
+          <p class="lead">The concept combines food, space, service, privacy, and ceremony into a complete dining experience suitable for Singapore’s high-end corporate and social market.</p>
+        </div>
+        <div class="split">
+          <div class="panel">
+            <h3>Core Pillars</h3>
+            <div class="list">
+              <div class="list-item"><span class="num">1</span><div><strong>Premium Chinese Cuisine</strong><br>Signature crab banquets, seasonal seafood, refined Chinese set menus, and chef-led presentations.</div></div>
+              <div class="list-item"><span class="num">2</span><div><strong>Artistic Spatial Experience</strong><br>Chinese-inspired interiors, curated art details, elegant lighting, premium tableware, and a strong sense of occasion.</div></div>
+              <div class="list-item"><span class="num">3</span><div><strong>High-End Hospitality</strong><br>Private-room service, corporate hosting standards, curated menus, and a controlled guest experience.</div></div>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Target Customers</h3>
+            <ul>
+              <li>Corporate clients and business entertainment guests</li>
+              <li>High-income local residents and Chinese-speaking communities</li>
+              <li>Regional visitors, international tourists, and convention guests</li>
+              <li>Families seeking premium celebration dining</li>
+              <li>VIP private dining and banquet customers</li>
+              <li>Guests seeking a refined Chinese dining landmark in central Singapore</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="highlight-band">
+          <div>
+            <div class="kicker">Market Rationale</div>
+            <h2>Singapore has the right audience for a high-ticket Chinese banquet brand.</h2>
+            <p>The market has a strong Chinese cultural foundation, large corporate and tourist flows, and proven acceptance for high-design, high-service restaurants. The concept is especially relevant for business dining, private social occasions, and premium Chinese hospitality.</p>
+          </div>
+          <div class="tag-grid">
+            <span class="tag">Chinese dining culture</span>
+            <span class="tag">Business entertainment</span>
+            <span class="tag">Private dining rooms</span>
+            <span class="tag">Convention traffic</span>
+            <span class="tag">Tourism & regional guests</span>
+            <span class="tag">High average spend</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="suntec">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Why Suntec City</div>
+            <h2>A natural home for a landmark Chinese flagship.</h2>
+          </div>
+          <p class="lead">Suntec City’s office catchment, convention connectivity, tourist accessibility, and established retail-dining environment make it highly suitable for a premium Chinese banquet and private dining destination.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><h3>Commercial Catchment</h3><p>Direct access to office professionals, corporate hosts, and business guests supports weekday dinner, private room, and corporate banquet demand.</p></article>
+          <article class="card"><h3>Convention & Visitor Flow</h3><p>Proximity to events, exhibitions, hotels, and Marina Centre traffic creates strong relevance for regional and international guests.</p></article>
+          <article class="card"><h3>Dining Mix Enhancement</h3><p>The restaurant can add a distinctive premium Chinese art dining concept to Suntec City’s tenant mix, attracting higher-spending customers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Site Requirement</div>
+            <h2>Designed for privacy, comfort, and service flow.</h2>
+          </div>
+          <p class="lead">The proposed restaurant will prioritise atmosphere and guest experience over maximum seat density, with a balanced mix of main dining and VIP rooms.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><h3>Preferred Size</h3><p><strong>2,000–3,000 sq ft</strong><br>Suitable for a compact but premium flagship format.</p></article>
+          <article class="card"><h3>Indicative Seating</h3><p><strong>60–100 seats</strong><br>Subject to final layout and private-room ratio.</p></article>
+          <article class="card"><h3>Key Areas</h3><p>Main dining area, VIP rooms, reception, feature display, full kitchen, service stations, and back-of-house facilities.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="investment">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Investment & Returns</div>
+            <h2>Serious flagship-level investment with long-term positioning.</h2>
+          </div>
+          <p class="lead">To achieve a standard close to Shanghai Xiexian Huayan’s high-end positioning, the estimated project investment is approximately S$2.5 million to S$3.5 million.</p>
+        </div>
+        <div class="split">
+          <div class="panel">
+            <h3>Indicative Investment Breakdown</h3>
+            <table class="table">
+              <tr><th>Item</th><th>Estimated Amount</th></tr>
+              <tr><td>Rental deposit and advance rental</td><td>S$200k – S$300k</td></tr>
+              <tr><td>Interior design, fit-out and construction</td><td>S$600k – S$1M</td></tr>
+              <tr><td>Kitchen equipment</td><td>S$300k – S$400k</td></tr>
+              <tr><td>Furniture, art pieces, tableware and soft furnishings</td><td>S$200k – S$300k</td></tr>
+              <tr><td>Licences, consultants, legal and professional fees</td><td>S$50k – S$100k</td></tr>
+              <tr><td>Initial working capital and operating reserve</td><td>S$500k – S$800k+</td></tr>
+            </table>
+          </div>
+          <div class="panel">
+            <h3>Revenue Potential</h3>
+            <div class="list">
+              <div class="list-item"><span class="num">•</span><div><strong>Average spend:</strong> S$300 – S$400+ per guest</div></div>
+              <div class="list-item"><span class="num">•</span><div><strong>Business focus:</strong> dinner, private rooms, banquets, and corporate hosting</div></div>
+              <div class="list-item"><span class="num">•</span><div><strong>Annual revenue potential:</strong> S$6M – S$7.5M</div></div>
+              <div class="list-item"><span class="num">•</span><div><strong>Estimated payback period:</strong> approximately 3–4 years, subject to final rent, cost structure, and ramp-up performance</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="dark">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Development Timeline</div>
+            <h2>Estimated 4–6 months after lease confirmation.</h2>
+          </div>
+          <p class="lead">The final timeline will depend on landlord handover condition, authority approvals, licensing, design finalisation, and construction requirements.</p>
+        </div>
+        <div class="timeline">
+          <article class="card"><h3>Lease & Design</h3><p>Site confirmation, lease negotiation, concept design, layout planning, and budget finalisation.</p></article>
+          <article class="card"><h3>Approvals</h3><p>Authority submissions, licensing preparation, kitchen planning, and procurement schedule.</p></article>
+          <article class="card"><h3>Fit-Out</h3><p>Interior construction, kitchen installation, furniture, art, tableware, and operating systems.</p></article>
+          <article class="card"><h3>Opening</h3><p>Recruitment, training, menu testing, soft opening, media previews, and official launch.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="highlight-band">
+          <div>
+            <div class="kicker">Conclusion</div>
+            <h2>Xiexian Huayan can become a premium Chinese dining landmark at Suntec City.</h2>
+            <p>The Singapore flagship is designed as a high-end banquet and art dining destination with strong relevance to Suntec City’s commercial, convention, retail, and lifestyle ecosystem. It aims to attract high-spending local, corporate, regional, and tourist customers while strengthening the mall’s premium dining profile.</p>
+          </div>
+          <div class="tag-grid">
+            <span class="tag">Shanghai brand origin</span>
+            <span class="tag">Singapore first store</span>
+            <span class="tag">Landmark flagship</span>
+            <span class="tag">High-end banquets</span>
+            <span class="tag">Private rooms</span>
+            <span class="tag">Chinese art dining</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong>Xiexian Huayan Singapore Landmark Flagship</strong><br>Brand Introduction & Project Plan for Suntec City</div>
+      <div class="cn">蟹仙画宴 · 新加坡首店 · 地标旗舰店</div>
+    </div>
+  </footer>
+</body>
+</html>
