@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Xiexian Huayan Singapore Landmark Flagship | Suntec City Proposal</title>
-  <meta name="description" content="Brand introduction and project plan for Xiexian Huayan Singapore Landmark Flagship Restaurant at Suntec City." />
-  <meta property="og:title" content="Xiexian Huayan Singapore Landmark Flagship" />
+  <title>Oriental Myth Singapore | Xiexian Huayan Singapore Landmark Flagship</title>
+  <meta name="description" content="Corporate brand introduction and project plan for Oriental Myth Singapore Pte. Ltd. and Xiexian Huayan Singapore Landmark Flagship Restaurant at Suntec City." />
+  <meta property="og:title" content="Oriental Myth Singapore | Xiexian Huayan Landmark Flagship" />
   <meta property="og:description" content="A premium Chinese banquet and art dining concept proposed for Suntec City, Singapore." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -245,6 +245,53 @@
     .tag { border: 1px solid rgba(240,210,140,.35); color: var(--gold-2); border-radius: 999px; padding: 8px 12px; font-size: .84rem; background: rgba(255,255,255,.06); }
     .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: step; }
     .timeline .card { position: relative; padding-top: 54px; }
+
+    .company-strip {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 24px;
+      color: rgba(255,250,241,.82);
+      font-size: .9rem;
+    }
+    .company-pill {
+      border: 1px solid rgba(240,210,140,.38);
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      padding: 8px 12px;
+      backdrop-filter: blur(8px);
+    }
+    .statement {
+      background: linear-gradient(135deg, rgba(255,250,241,.96), rgba(243,226,200,.86));
+      border: 1px solid rgba(121,95,77,.16);
+      border-radius: 30px;
+      padding: 34px;
+      box-shadow: 0 18px 55px rgba(35,23,17,.08);
+    }
+    .statement h3 { font-size: 2rem; margin-bottom: 14px; }
+    .mini-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+    .mini {
+      border: 1px solid rgba(141,32,28,.14);
+      background: rgba(255,250,241,.65);
+      border-radius: 18px;
+      padding: 16px;
+    }
+    .mini strong { display: block; color: var(--red); margin-bottom: 4px; }
+    .chart-card { grid-column: span 2; overflow: hidden; }
+    .chart-wrap {
+      background: linear-gradient(180deg, rgba(255,250,241,.9), rgba(243,226,200,.48));
+      border: 1px solid rgba(121,95,77,.16);
+      border-radius: 24px;
+      padding: 16px;
+      margin-top: 18px;
+    }
+    .chart-wrap svg { width: 100%; height: auto; display: block; }
+    .chart-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; color: var(--muted); font-size: .88rem; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+    .gold-dot { background: var(--gold); }
+    .red-dot { background: var(--red); }
+    .mobile-note { color: var(--muted); font-size: .9rem; margin-top: 12px; }
     .timeline .card:before {
       counter-increment: step;
       content: counter(step);
@@ -264,19 +311,25 @@
 
     @media (max-width: 900px) {
       .nav-links { display: none; }
-      .metrics, .cards, .split, .section-head, .highlight-band, .timeline { grid-template-columns: 1fr; }
+      .metrics, .cards, .split, .section-head, .highlight-band, .timeline, .mini-grid { grid-template-columns: 1fr; }
       section { padding: 64px 5vw; }
       .hero { padding-left: 5vw; padding-right: 5vw; }
       .metric, .card, .panel, .highlight-band { border-radius: 22px; }
       .table { font-size: .92rem; }
+      .hero { min-height: auto; padding-top: 110px; }
+      h1 { font-size: clamp(2.65rem, 14vw, 4.2rem); }
+      .chart-card { grid-column: auto; }
+      .company-strip { font-size: .82rem; }
+      .statement { padding: 24px; }
     }
   </style>
 </head>
 <body>
   <header class="hero">
     <nav class="nav" aria-label="Primary navigation">
-      <div class="brand-mark"><span class="seal">蟹</span><span>Xiexian Huayan</span></div>
+      <div class="brand-mark"><span class="seal">东</span><span>Oriental Myth Singapore</span></div>
       <div class="nav-links">
+        <a href="#company">Company</a>
         <a href="#concept">Concept</a>
         <a href="#suntec">Suntec Fit</a>
         <a href="#investment">Investment</a>
@@ -284,9 +337,10 @@
       </div>
     </nav>
     <div class="hero-inner">
+      <div class="company-strip"><span class="company-pill">Operating Company: Oriental Myth Singapore Pte. Ltd.</span><span class="company-pill cn">东方神话新加坡有限公司</span></div>
       <div class="eyebrow">Singapore First Store · Landmark Flagship Proposal</div>
       <h1>Xiexian Huayan Singapore Landmark Flagship</h1>
-      <p class="subtitle">A premium Chinese banquet and art dining destination proposed for Suntec City, bringing the calibre of Shanghai’s Xiexian Huayan to Singapore through refined crab cuisine, private-room hospitality, and immersive Chinese aesthetics.</p>
+      <p class="subtitle">A premium Chinese banquet and art dining destination in Singapore, proposed for Suntec City by Oriental Myth Singapore Pte. Ltd. The project brings the calibre and cultural language of Shanghai’s Xiexian Huayan to Singapore through refined crab cuisine, private-room hospitality, and immersive Chinese aesthetics.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#overview">View Project Brief</a>
         <a class="btn secondary" href="#investment">Investment & Revenue</a>
@@ -301,6 +355,29 @@
   </header>
 
   <main>
+
+    <section id="company">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Corporate Brand & Culture</div>
+            <h2>Oriental Myth Singapore Pte. Ltd. brings Chinese banquet culture into a Singapore landmark setting.</h2>
+          </div>
+          <p class="lead"><strong>Oriental Myth Singapore Pte. Ltd.</strong> / <span class="cn">东方神话新加坡有限公司</span> is the operating company behind the proposed Singapore flagship. The company is built around the idea of presenting contemporary Chinese dining as a complete cultural experience: cuisine, hospitality, art, private-room etiquette, and ceremonial banquets.</p>
+        </div>
+        <div class="statement">
+          <h3>Brand Culture Statement</h3>
+          <p>The brand takes inspiration from China’s tradition of refined banquets, seasonal ingredients, hospitality rituals, and poetic visual culture. In Singapore, the aim is to create a high-end Chinese dining venue that feels rooted in Chinese aesthetics while meeting international expectations for service, privacy, comfort, and operational discipline.</p>
+          <div class="mini-grid">
+            <div class="mini"><strong>Company Name</strong>Oriental Myth Singapore Pte. Ltd.<br><span class="cn">东方神话新加坡有限公司</span></div>
+            <div class="mini"><strong>Restaurant Brand</strong>Xiexian Huayan<br><span class="cn">蟹仙画宴</span></div>
+            <div class="mini"><strong>Singapore Positioning</strong>First Singapore store and landmark flagship</div>
+            <div class="mini"><strong>Core Culture</strong>Chinese art dining, crab banquets, private-room hospitality</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="overview">
       <div class="wrap">
         <div class="section-head">
@@ -308,7 +385,7 @@
             <div class="kicker">Project Overview</div>
             <h2>Shanghai-origin premium Chinese banquet dining, launched in Singapore.</h2>
           </div>
-          <p class="lead">Xiexian Huayan is a self-owned brand planning its first Singapore outlet as a landmark flagship restaurant. The proposed concept is designed for high-end banquets, business entertainment, private dining, and premium Chinese culinary experiences.</p>
+          <p class="lead">Xiexian Huayan is a self-owned brand operated in Singapore by Oriental Myth Singapore Pte. Ltd., planning its first Singapore outlet as a landmark flagship restaurant. The proposed concept is designed for high-end banquets, business entertainment, private dining, and premium Chinese culinary experiences.</p>
         </div>
         <div class="cards">
           <article class="card">
@@ -317,7 +394,7 @@
           </article>
           <article class="card">
             <h3>Singapore Flagship</h3>
-            <p>The Singapore outlet will be the brand’s first store in the market and is intended to serve as a recognisable flagship, not a standard casual dining expansion.</p>
+            <p>The Singapore outlet will be the brand’s first store in Singapore and is intended to serve as a recognisable local flagship for Suntec City and the wider Marina Centre area.</p>
           </article>
           <article class="card">
             <h3>Core Occasion</h3>
@@ -356,6 +433,24 @@
               <li>Guests seeking a refined Chinese dining landmark in central Singapore</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">Product, Price & Space</div>
+            <h2>Clear premium positioning for Singapore’s business and private dining market.</h2>
+          </div>
+          <p class="lead">The offer is structured around high-ticket dining occasions, with product categories, price bands, and interior standards aligned to a flagship restaurant rather than a casual seafood outlet.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><h3>Product Categories</h3><ul><li>Signature crab banquet menus</li><li>Seasonal seafood and premium Chinese set menus</li><li>VIP private-room menus</li><li>Corporate banquet packages</li><li>Tea, wine and festive gifting options</li></ul></article>
+          <article class="card"><h3>Price Positioning</h3><p>Target average spend of <strong>S$300–S$400+ per guest</strong>, with higher-value private room and banquet spending during corporate hosting, festive periods, and VIP occasions.</p></article>
+          <article class="card"><h3>Décor Direction</h3><p>Contemporary Chinese luxury: warm wood, deep red and gold accents, curated art features, refined lighting, premium tableware, and private rooms designed for discreet hosting.</p></article>
         </div>
       </div>
     </section>
@@ -421,7 +516,7 @@
             <div class="kicker">Investment & Returns</div>
             <h2>Serious flagship-level investment with long-term positioning.</h2>
           </div>
-          <p class="lead">To achieve a standard close to Shanghai Xiexian Huayan’s high-end positioning, the estimated project investment is approximately S$2.5 million to S$3.5 million.</p>
+          <p class="lead">To establish a Singapore flagship with Shanghai-level brand standards, the estimated project investment is approximately S$2.5 million to S$3.5 million, with projected annual revenue potential of S$6 million to S$7.5 million after ramp-up.</p>
         </div>
         <div class="split">
           <div class="panel">
@@ -440,10 +535,36 @@
             <h3>Revenue Potential</h3>
             <div class="list">
               <div class="list-item"><span class="num">•</span><div><strong>Average spend:</strong> S$300 – S$400+ per guest</div></div>
-              <div class="list-item"><span class="num">•</span><div><strong>Business focus:</strong> dinner, private rooms, banquets, and corporate hosting</div></div>
+              <div class="list-item"><span class="num">•</span><div><strong>Business focus:</strong> dinner, private rooms, banquets, and corporate hosting in Singapore</div></div>
               <div class="list-item"><span class="num">•</span><div><strong>Annual revenue potential:</strong> S$6M – S$7.5M</div></div>
               <div class="list-item"><span class="num">•</span><div><strong>Estimated payback period:</strong> approximately 3–4 years, subject to final rent, cost structure, and ramp-up performance</div></div>
             </div>
+          </div>
+          <div class="panel chart-card">
+            <h3>Illustrative Investment vs Revenue Projection</h3>
+            <p class="mobile-note">Linear graph in S$ million. Revenue assumes progressive ramp-up after opening; figures are indicative for landlord review only.</p>
+            <div class="chart-wrap" role="img" aria-label="Line graph showing initial investment of 3 million Singapore dollars and projected revenue rising from 4.8 million in year one to 7.5 million in year four.">
+              <svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="goldLine" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c89b4b"/><stop offset="1" stop-color="#f0d28c"/></linearGradient>
+                </defs>
+                <rect width="720" height="360" rx="18" fill="#fffaf1"/>
+                <g stroke="#e7d2b2" stroke-width="1">
+                  <line x1="70" y1="58" x2="675" y2="58"/><line x1="70" y1="116" x2="675" y2="116"/><line x1="70" y1="174" x2="675" y2="174"/><line x1="70" y1="232" x2="675" y2="232"/><line x1="70" y1="290" x2="675" y2="290"/>
+                </g>
+                <g fill="#795f4d" font-family="Inter, sans-serif" font-size="14">
+                  <text x="18" y="62">8M</text><text x="18" y="120">6M</text><text x="18" y="178">4M</text><text x="18" y="236">2M</text><text x="18" y="294">0</text>
+                  <text x="70" y="326">Initial</text><text x="212" y="326">Year 1</text><text x="362" y="326">Year 2</text><text x="512" y="326">Year 3</text><text x="640" y="326">Year 4</text>
+                </g>
+                <polyline fill="none" stroke="#8d201c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="90,203 235,203 380,203 525,203 655,203"/>
+                <polyline fill="none" stroke="url(#goldLine)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" points="90,290 235,151 380,116 525,88 655,73"/>
+                <g font-family="Inter, sans-serif" font-size="13" font-weight="700">
+                  <g fill="#8d201c"><circle cx="90" cy="203" r="7"/><text x="106" y="198">Investment S$2.5–3.5M</text></g>
+                  <g fill="#c89b4b"><circle cx="235" cy="151" r="7"/><text x="245" y="142">S$4.8M</text><circle cx="380" cy="116" r="7"/><text x="390" y="108">S$6.0M</text><circle cx="525" cy="88" r="7"/><text x="535" y="80">S$7.0M</text><circle cx="655" cy="73" r="7"/><text x="590" y="56">S$7.5M</text></g>
+                </g>
+              </svg>
+            </div>
+            <div class="chart-legend"><span><i class="legend-dot red-dot"></i>Estimated initial investment</span><span><i class="legend-dot gold-dot"></i>Illustrative annual revenue ramp-up</span></div>
           </div>
         </div>
       </div>
@@ -472,8 +593,8 @@
         <div class="highlight-band">
           <div>
             <div class="kicker">Conclusion</div>
-            <h2>Xiexian Huayan can become a premium Chinese dining landmark at Suntec City.</h2>
-            <p>The Singapore flagship is designed as a high-end banquet and art dining destination with strong relevance to Suntec City’s commercial, convention, retail, and lifestyle ecosystem. It aims to attract high-spending local, corporate, regional, and tourist customers while strengthening the mall’s premium dining profile.</p>
+            <h2>Oriental Myth Singapore can establish Xiexian Huayan as a premium Chinese dining landmark at Suntec City.</h2>
+            <p>The Singapore flagship is designed by Oriental Myth Singapore Pte. Ltd. as a high-end banquet and art dining destination with strong relevance to Suntec City’s commercial, convention, retail, and lifestyle ecosystem. It aims to attract high-spending local, corporate, regional, and tourist customers while strengthening the mall’s premium dining profile.</p>
           </div>
           <div class="tag-grid">
             <span class="tag">Shanghai brand origin</span>
@@ -490,8 +611,8 @@
 
   <footer>
     <div class="wrap">
-      <div><strong>Xiexian Huayan Singapore Landmark Flagship</strong><br>Brand Introduction & Project Plan for Suntec City</div>
-      <div class="cn">蟹仙画宴 · 新加坡首店 · 地标旗舰店</div>
+      <div><strong>Oriental Myth Singapore Pte. Ltd.</strong><br>Xiexian Huayan Singapore Landmark Flagship · Brand Introduction & Project Plan for Suntec City</div>
+      <div class="cn">东方神话新加坡有限公司 · 蟹仙画宴 · 新加坡首店 · 地标旗舰店</div>
     </div>
   </footer>
 </body>
