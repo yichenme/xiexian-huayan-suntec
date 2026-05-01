@@ -1,6 +1,6 @@
-# Xiexian Huayan Singapore Landmark Flagship
+# Crab Art Banquet Singapore Landmark Flagship
 
-Static GitHub Pages proposal site for the proposed Xiexian Huayan Singapore first store / landmark flagship at Suntec City.
+Static GitHub Pages proposal site for the proposed Crab Art Banquet Singapore first store / landmark flagship at Suntec City.
 
 ## Local preview
 
