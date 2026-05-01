@@ -1,6 +1,6 @@
-# Crab Art Banquet Singapore Landmark Flagship
+# Crab & Painting Singapore Landmark Flagship
 
-Static GitHub Pages proposal site for the proposed Crab Art Banquet Singapore first store / landmark flagship at Suntec City.
+Static GitHub Pages proposal site for the proposed Crab & Painting Singapore first store / landmark flagship at Suntec City.
 
 ## Local preview
 
